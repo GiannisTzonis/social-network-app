@@ -1,0 +1,23 @@
+. {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  background-color: blue;
+}
+
+.bg {
+  align-self: center;
+  width: 100%;
+  position: absolute;
+}
+
+.container {
+  position: relative;
+  background: rgba(131, 184, 166, 0);
+}
+
+/* .container li {
+  height: 25%;
+} */
