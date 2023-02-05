@@ -1,4 +1,4 @@
-. {
+* {
   box-sizing: border-box;
 }
 
@@ -7,6 +7,19 @@ body {
   background-color: blue;
 }
 
+/* PROFILE */
+
+/* .mt-5 {
+  margin: auto;
+  width: 50%;
+  background-color: rgba(0, 0, 255, 0.253);
+} */
+.col-6 {
+  align-items: center;
+  width: 80%;
+}
+
+/* POST */
 .bg {
   align-self: center;
   width: 100%;
