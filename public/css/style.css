@@ -36,6 +36,15 @@ body {
   width: 100%;
 }
 
+h2 {
+  font-size: 2.4rem;
+}
+
+h2,
+h3 {
+  padding: 15px;
+}
+
 /* .container li {
   height: 25%;
 } */
@@ -66,6 +75,7 @@ body {
 
 .glowing-txt {
   float: left;
+  padding-left: 30px;
   margin-right: -0.8em;
   -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
     0 0 0.45em var(--glow-color);
