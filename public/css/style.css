@@ -155,16 +155,9 @@ input:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-/* .signUp > label > p {
-  color: black;
-}
-.signUp > .inputs {
-  color: rgb(0, 0, 0);
-}
-
 .form-control {
-  color: #000;
-} */
-h4 {
-  color: black;
+  width: 375px;
+  font-size: 1.2rem;
+  height: 2rem;
+  font-family: "Space Grotesk";
 }
