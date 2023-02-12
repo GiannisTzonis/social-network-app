@@ -9,11 +9,6 @@ body {
 
 /* PROFILE */
 
-/* .mt-5 {
-  margin: auto;
-  width: 50%;
-  background-color: rgba(0, 0, 255, 0.253);
-} */
 .col-6 {
   align-items: center;
   margin: auto;
@@ -21,6 +16,18 @@ body {
 
   list-style: none;
   /* border: 2px solid red; */
+}
+
+.mt-5 > h2 {
+  margin: auto;
+  align-items: center;
+  margin-left: 185px;
+}
+
+.mt-5 {
+  align-items: center;
+  text-align: center;
+  margin: auto;
 }
 
 /* POST */
@@ -46,7 +53,9 @@ h2 {
 
 h2,
 h3 {
-  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 /* .container li {
@@ -232,5 +241,6 @@ input:-webkit-autofill:focus {
 
 .returned {
   text-decoration: none;
+  margin-left: 50px;
   position: fixed;
 }
