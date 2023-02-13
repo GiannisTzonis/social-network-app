@@ -1,17 +1,15 @@
 <%- include('partials/header') -%>
 <%- include('partials/navbar', {active: "Feed"}); %>
-<img class="bg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.V6XTksXJK7l-4DPMa3-RgwHaLG%26pid%3DApi&f=1&ipt=aa56f9fc309706aae40da81546e9d5cc39d2a5063dde5545d403d0eb3c8b5ba0&ipo=images">
   <div class="container">
     <div>
       <ul class="gridBox">
         <% for(var i=0; i<posts.length; i++) {%>
-          
-          <li>
-            <h2><%= posts[i].title %></h2>
+          <li class="posted">
+            <!-- <h2><%= posts[i].title %></h2> -->
             <a href="/post/<%= posts[i]._id%>">
               <img class="img-fluid" src="<%= posts[i].image%>">
             </a>
-            <h3 class="col-3">Likes: <%= posts[i].likes %></h3>
+            <!-- <h3 class="col-3">Likes: <%= posts[i].likes %></h3> -->
           </li>
           
         <% } %>
