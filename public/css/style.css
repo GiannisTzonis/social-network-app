@@ -4,7 +4,7 @@
 
 body {
   font-family: monospace;
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0);
 }
 
 /* PROFILE */
@@ -39,12 +39,13 @@ body {
 
 .container {
   position: relative;
-  background: rgba(131, 184, 166, 0);
+  /* background: rgba(131, 184, 166, 0); */
 }
 
-.img-fluid {
-  width: 100%;
-}
+/* .img-fluid {
+  width: 30%;
+  float: left;
+} */
 
 h2 {
   font-size: 2.4rem;
@@ -243,4 +244,48 @@ input:-webkit-autofill:focus {
   text-decoration: none;
   margin-left: 50px;
   position: fixed;
+}
+
+/* INDEX BUTTONS */
+
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 30px;
+}
+
+.fill::after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.fillBox {
+  margin: auto;
+  width: 35%;
+  padding: 10px;
+}
+
+.gridBox {
+  display: grid;
+  /* column-gap: 50px; */
+  grid-template-columns: auto auto auto;
 }
