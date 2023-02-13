@@ -506,3 +506,7 @@ input:-webkit-autofill:focus {
   height: 100%;
   object-fit: contain;
 }
+
+.img-post {
+  width: 550px;
+}
