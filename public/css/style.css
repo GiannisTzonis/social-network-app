@@ -510,3 +510,34 @@ input:-webkit-autofill:focus {
 .img-post {
   width: 550px;
 }
+
+/* LIKE BUTTON */
+
+.buttonLikes {
+  /* padding: 10px 15px; */
+  background: #0080ff;
+  font-size: 14px;
+  font-family: monospace;
+  /* border-radius: 5px; */
+  color: #e8efff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 135px;
+  height: 50px;
+}
+/* 
+.likez {
+  margin: auto;
+} */
+
+.buttonLikes:hover {
+  background: rgb(207, 41, 41);
+  color: rgb(218, 250, 40);
+  border: none;
+  font-weight: 700;
+}
+
+.buttonLikes i {
+  color: black;
+}
