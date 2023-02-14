@@ -224,6 +224,7 @@ header {
   align-items: center;
   text-align: center;
   margin: auto;
+  margin-top: 40px;
 }
 
 /* POST */
@@ -303,6 +304,7 @@ h2 {
 
 .postContainer {
   margin: auto;
+  margin-top: 30px;
   background-color: rgba(137, 43, 226, 0.308);
   width: 50%;
   height: 600px;
