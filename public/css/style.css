@@ -233,10 +233,10 @@ header {
   position: absolute;
 }
 
-.container {
+/* .container {
   position: relative;
-  /* background: rgba(131, 184, 166, 0); */
-}
+  background: rgba(131, 184, 166, 0);
+} */
 
 h2 {
   font-size: 2.4rem;
@@ -299,6 +299,35 @@ h2 {
   width: 20%;
 } */
 
+/* POST ROUTE */
+
+.postContainer {
+  margin: auto;
+  background-color: rgba(137, 43, 226, 0.308);
+  width: 50%;
+  height: 600px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  line-height: 1.5;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+  height: 500px;
+}
+
+.postContainer::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to bottom right, #ff9ec4, #ffd07e);
+  width: 900px;
+  height: 500px;
+  /* border-radius: 50%; */
+  z-index: -1;
+}
+
+.postContainer > img {
+  width: 60%;
+}
 /* SIGN UP */
 
 .signUp {
@@ -480,7 +509,9 @@ input:-webkit-autofill:focus {
 }
 
 .fillBox {
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 30px;
 }
@@ -499,6 +530,19 @@ input:-webkit-autofill:focus {
   width: 550px;
   height: 550px;
   margin: 15px;
+}
+
+.addPost {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addPost > .fill {
+  font-size: 1.6rem;
+  align-items: center;
+  width: 270px;
 }
 
 /* .img-fluid {
