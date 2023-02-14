@@ -10,9 +10,9 @@ body {
 html {
   --u: 1.185vmin;
   --hue: hue-rotate(0deg);
-  --c1: #ea9ab2;
-  --c2: #eaf2d7;
-  --c3: #b3dee2;
+  --c1: #ff7878;
+  --c2: #fffa90;
+  --c3: #7a76ff;
   --gp: 50% / calc(var(--u) * 12) calc(var(--u) * 17.05);
   height: 100vh;
   filter: var(--hue);
@@ -191,13 +191,13 @@ html {
 header {
   --s: 76px; /* control the size */
 
-  --c: #d275df;
+  --c: #7a76ff;
   --_g: conic-gradient(var(--c) 25%, #0000 0) 0 0;
   background: var(--_g) / calc(2 * var(--s)) calc(var(--s) / 9.5),
     var(--_g) / calc(var(--s) / 9.5) calc(2 * var(--s)),
     repeating-conic-gradient(#0000 0 25%, var(--c) 0 50%) var(--s) 0 /
       calc(2 * var(--s)) calc(2 * var(--s)),
-    radial-gradient(50% 50%, #2eb044 98%, var(--c)) 0 0 / var(--s) var(--s);
+    radial-gradient(50% 50%, #81ff76 98%, var(--c)) 0 0 / var(--s) var(--s);
 }
 
 /* PROFILE */
@@ -305,10 +305,10 @@ h2 {
   color: black;
   width: 60%;
   margin: auto;
-  background: #510564;
+  background: #bdb2ff;
   padding: 50px 100px;
   border: 2px solid rgba(0, 0, 0, 1);
-  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+  box-shadow: 15px 15px 1px #ffc6ff, 15px 15px 1px 2px rgba(0, 0, 0, 1);
 }
 
 .inputs {
@@ -368,9 +368,9 @@ input:-webkit-autofill:focus {
 }
 
 /* LOGOUT BUTTON */
-.returned {
-  --border: 5px; /* the border width */
-  --color: #37e8fc; /* the color */
+/* .returned {
+  --border: 5px; the border width
+  --color: #37e8fc; the color
 
   font-size: 1rem;
   padding: 0.25em 1.2em;
@@ -384,7 +384,15 @@ input:-webkit-autofill:focus {
   transition: color var(--t, 0.3s), background-size 0.3s;
   position: relative;
 }
-.returned:before,
+
+.returned + .returned {
+  --color: red;
+  margin-top: 70px;
+  margin-right: 155px;
+  padding-top: 140px;
+} */
+
+/* .returned:before,
 .returned:after {
   content: "";
   position: absolute;
@@ -418,28 +426,31 @@ input:-webkit-autofill:focus {
   --c: #0005;
   transform: translate(4px, 4px);
   transition: none;
-}
-
-.dataBox {
-  position: absolute;
-  top: 0;
-  right: 0;
-  /* border: 4px solid yellow; */
-}
-.dataBox > a + a {
-  --color: #860909; /* the color */
-  margin-top: 70px;
-}
 
 .returned {
   text-decoration: none;
   position: fixed;
 }
+} */
+
+.dataBox {
+  width: 400px;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background: #bdb2ff;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: 15px 15px 1px #ffc6ff, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+}
+
+/* .databox > p {
+  padding: 5px;
+} */
 
 /* INDEX BUTTONS */
 
 .fill {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 200;
   letter-spacing: 1px;
   padding: 13px 50px 13px;
@@ -470,8 +481,8 @@ input:-webkit-autofill:focus {
 
 .fillBox {
   margin: auto;
-  width: 35%;
-  padding: 10px;
+  width: 100%;
+  padding: 30px;
 }
 
 .gridBox {
@@ -539,8 +550,8 @@ input:-webkit-autofill:focus {
 }
 
 .buttonLikes:hover {
-  background: rgb(207, 41, 41);
-  color: rgb(218, 250, 40);
+  background: rgb(47, 226, 196);
+  color: rgb(66, 8, 175);
   border: none;
   font-weight: 700;
 }
