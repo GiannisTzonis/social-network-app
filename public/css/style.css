@@ -446,9 +446,9 @@ input:-webkit-autofill:focus {
 }
 
 .addPost > .fill {
-  font-size: 1.05rem;
+  font-size: 1.45rem;
   align-items: center;
-  width: 300px;
+  width: 270px;
   font-weight: 700;
 }
 
@@ -543,8 +543,8 @@ h1 {
   letter-spacing: 0.1em;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #fb48c4;
-  text-shadow: 5.5px 5.5px #e7d27c, 20px 20px #000;
+  -webkit-text-stroke-color: #e7d27c;
+  text-shadow: 5.5px 5.5px #fb48c4, 20px 20px #000;
   overflow: hidden;
   display: inline-block;
 
