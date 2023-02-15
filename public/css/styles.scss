@@ -1,0 +1,23 @@
+.cyber-text {
+  $random-text: "digital highway";
+  position: relative;
+  text-transform: uppercase;
+  font-size: $extra-large;
+  font-family: "Catamaran", sans-serif;
+  color: rgba(white, 0.8);
+  &:before {
+    position: absolute;
+    content: $random-text;
+    color: rgba($blue, 0.8);
+    top: 5px;
+    left: 10px;
+  }
+  &:after {
+    z-index: -1;
+    position: absolute;
+    content: $random-text;
+    color: rgba($red, 0.8);
+    top: -5px;
+    left: 8px;
+  }
+}

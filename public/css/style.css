@@ -10,9 +10,9 @@ body {
 html {
   --u: 1.185vmin;
   --hue: hue-rotate(0deg);
-  --c1: #ff7878;
-  --c2: #fffa90;
-  --c3: #7a76ff;
+  --c1: #b388eb;
+  --c2: #f7aef8;
+  --c3: #8093f1;
   --gp: 50% / calc(var(--u) * 12) calc(var(--u) * 17.05);
   height: 100vh;
   filter: var(--hue);
@@ -260,7 +260,9 @@ h3 {
 /* HEADER */
 
 h1 > a {
+  margin: auto;
   text-decoration: none;
+  font-family: "Fredoka One", cursive;
 }
 .container {
   animation: flicker 1.5s infinite alternate;
@@ -269,6 +271,15 @@ h1 > a {
 
 h1 {
   font-size: 4.2rem;
+  position: relative;
+  padding-top: 15px;
+  /* text-shadow: 5px 5px #ffff00;
+  filter: drop-shadow(-10px 10px 20px #fff000); */
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 8px 8px #ff1f8f, 20px 20px #000000;
 }
 
 p {
@@ -281,6 +292,7 @@ p {
 
 h2 {
   font-size: 1.8rem;
+  font-family: "Space Mono", monospace;
 }
 /* .container {
   margin-top: 3vh;
@@ -349,12 +361,12 @@ h2 {
 /* SIGN UP */
 
 .signUp {
-  color: black;
+  color: rgb(223, 236, 147);
   width: 60%;
   margin: auto;
-  background: #bdb2ff;
+  background: #250c49;
   padding: 50px 100px;
-  border: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid rgb(0, 0, 0);
   box-shadow: 15px 15px 1px #ffc6ff, 15px 15px 1px 2px rgba(0, 0, 0, 1);
 }
 
@@ -369,7 +381,7 @@ h2 {
   outline: none;
   font-size: 1.2rem;
   font-weight: 900;
-  color: #2a293e;
+  color: rgb(223, 236, 147);
 }
 
 .inputs:focus {
@@ -483,8 +495,8 @@ input:-webkit-autofill:focus {
 .dataBox {
   width: 400px;
   position: absolute;
-  top: 15px;
-  right: 25px;
+  /* top: 15px; */
+  right: 45px;
   background: #bdb2ff;
   border: 2px solid rgba(0, 0, 0, 1);
   box-shadow: 15px 15px 1px #ffc6ff, 15px 15px 1px 2px rgba(0, 0, 0, 1);
@@ -511,7 +523,7 @@ input:-webkit-autofill:focus {
 
 .fill::after {
   content: "";
-  background-color: #ffe54c;
+  background-color: #f4f4ed;
   width: 100%;
   z-index: -1;
   position: absolute;
@@ -620,4 +632,19 @@ input:-webkit-autofill:focus {
 
 .buttonLikes i {
   color: black;
+}
+
+.text-center {
+  border: 4px solid brown;
+}
+
+.titlu {
+  display: grid;
+  align-items: center;
+  width: 45%;
+}
+.titlu > img {
+  width: 40%;
+  height: 150px;
+  position: absolute;
 }
