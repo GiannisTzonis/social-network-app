@@ -188,18 +188,6 @@ html {
   background-color: var(--c1);
 }
 
-header {
-  --s: 76px; /* control the size */
-
-  --c: #7a76ff;
-  --_g: conic-gradient(var(--c) 25%, #0000 0) 0 0;
-  background: var(--_g) / calc(2 * var(--s)) calc(var(--s) / 9.5),
-    var(--_g) / calc(var(--s) / 9.5) calc(2 * var(--s)),
-    repeating-conic-gradient(#0000 0 25%, var(--c) 0 50%) var(--s) 0 /
-      calc(2 * var(--s)) calc(2 * var(--s)),
-    radial-gradient(50% 50%, #81ff76 98%, var(--c)) 0 0 / var(--s) var(--s);
-}
-
 /* PROFILE */
 
 .col-6 {
@@ -261,6 +249,7 @@ h3 {
 
 h1 > a {
   margin: auto;
+
   text-decoration: none;
   font-family: "Fredoka One", cursive;
 }
@@ -270,6 +259,7 @@ h1 > a {
 }
 
 h1 {
+  width: 100%;
   font-size: 4.2rem;
   position: relative;
   padding-top: 15px;
@@ -360,17 +350,32 @@ h2 {
 
 /* SIGN UP */
 
-.signUp {
-  color: rgb(223, 236, 147);
-  width: 60%;
+.postBg {
   margin: auto;
-  background: #250c49;
+  width: 60%;
+  --s: 76px; /* control the size */
+
+  --c: #7a76ff;
+  --_g: conic-gradient(var(--c) 25%, #0000 0) 0 0;
+  background: var(--_g) / calc(2 * var(--s)) calc(var(--s) / 9.5),
+    var(--_g) / calc(var(--s) / 9.5) calc(2 * var(--s)),
+    repeating-conic-gradient(#0000 0 25%, var(--c) 0 50%) var(--s) 0 /
+      calc(2 * var(--s)) calc(2 * var(--s)),
+    radial-gradient(50% 50%, #81ff76 98%, var(--c)) 0 0 / var(--s) var(--s);
+}
+
+.signUp {
+  color: black;
+  width: 100%;
+  margin: auto;
+  /* background: #250c49; */
   padding: 50px 100px;
   border: 2px solid rgb(0, 0, 0);
   box-shadow: 15px 15px 1px #ffc6ff, 15px 15px 1px 2px rgba(0, 0, 0, 1);
 }
 
 .inputs {
+  margin: 5px;
   font-family: monospace;
   text-shadow: 2px black;
   display: block;
@@ -381,7 +386,8 @@ h2 {
   outline: none;
   font-size: 1.2rem;
   font-weight: 900;
-  color: rgb(223, 236, 147);
+  color: rgb(2, 0, 27);
+  text-shadow: 2px 2px red;
 }
 
 .inputs:focus {
@@ -634,17 +640,20 @@ input:-webkit-autofill:focus {
   color: black;
 }
 
-.text-center {
-  border: 4px solid brown;
-}
-
 .titlu {
+  margin: auto;
   display: grid;
   align-items: center;
-  width: 45%;
+  width: 90%;
 }
 .titlu > img {
-  width: 40%;
-  height: 150px;
+  margin: auto;
+  width: 90%;
+  height: 300px;
   position: absolute;
+  filter: hue-rotate(-0.45turn);
+}
+
+.cyber-text {
+  padding-bottom: 120px;
 }
