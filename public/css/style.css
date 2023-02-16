@@ -384,6 +384,7 @@ input:-webkit-autofill:focus {
 /* INDEX BUTTONS */
 
 .fill {
+  width: 100%;
   font-size: 18px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -445,9 +446,10 @@ input:-webkit-autofill:focus {
 }
 
 .addPost > .fill {
-  font-size: 1.6rem;
+  font-size: 1.05rem;
   align-items: center;
-  width: 270px;
+  width: 300px;
+  font-weight: 700;
 }
 
 .posted > a {
@@ -546,7 +548,9 @@ h1 {
   overflow: hidden;
   display: inline-block;
 
-  animation: flicker 2.5s infinite alternate;
+  animation: flicker linear 7s reverse infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
 @keyframes flicker {
