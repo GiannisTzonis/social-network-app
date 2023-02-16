@@ -4,7 +4,7 @@
     padding-top: 70px;
   }
   header > h2 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   .titlu {
     height: 220px;
@@ -16,7 +16,7 @@
     margin-top: 30px;
   }
   .addPost > .fill {
-    margin: auto;z
+    margin: auto;
     width: 60%;
     font-size: 1rem;
   }
@@ -32,7 +32,7 @@
     padding-right: 10px;
   }
   .postBg {
-    width: 95%;;
+    width: 95%;
   }
   .inputs {
     font-size: 1rem;
@@ -56,9 +56,18 @@
     position: relative;
     padding-right: 0;
     right: 0;
-    height: 2.8rem;
+    height: 3.4rem;
   }
   .dataBox > p {
-    font-size: .8rem;
+    margin: 5px;
+    font-size: 0.8rem;
+  }
+  .fillBox {
+    width: 100%;
+  }
+  .fill {
+    width: 40%;
+    margin: auto;
+    font-size: 1rem;
   }
 }
