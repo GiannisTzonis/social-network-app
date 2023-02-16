@@ -446,6 +446,7 @@ input:-webkit-autofill:focus {
 }
 
 .addPost > .fill {
+  font-family: "space mono";
   font-size: 1.45rem;
   align-items: center;
   width: 270px;
@@ -478,7 +479,7 @@ input:-webkit-autofill:focus {
   outline: none;
   border: none;
   cursor: pointer;
-  width: 160px;
+  width: 200px;
   height: 50px;
 }
 
@@ -516,8 +517,8 @@ input:-webkit-autofill:focus {
 
 .titlu {
   margin: auto;
-  width: 50%;
-  height: 300px;
+  width: 100%;
+  height: 270px;
   background: radial-gradient(circle at bottom, navy 0, black 100%);
   overflow: hidden;
   box-shadow: 0 20px 50px rgb(23, 32, 90);
@@ -530,14 +531,14 @@ h1 > a {
   margin: auto;
   text-decoration: none;
   font-family: "Fredoka One", cursive;
+  margin-bottom: 150px;
 }
 
 h1 {
   margin: auto;
   width: 100%;
-  font-size: 4.2rem;
+  font-size: 6.2rem;
   position: relative;
-  padding-top: 15px;
   text-shadow: 5px 5px #ffffff;
   filter: drop-shadow(-10px 20px 20px #ffffff);
   letter-spacing: 0.1em;
@@ -551,6 +552,8 @@ h1 {
   animation: flicker linear 7s reverse infinite;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
+
+  padding-top: -110px;
 }
 
 @keyframes flicker {
@@ -575,16 +578,12 @@ h1 {
 header > h2 {
   font-size: 2.4rem;
   margin: auto;
-  font-family: "Fascinate", cursive;
-  text-shadow: -3px -3px 0 #222, 3px -3px 0 #222, -3px 3px 0 #222,
-    3px 3px 0 #222, 4px 4px 0 #fff, 5px 5px 0 #fff, 6px 6px 0 #fff,
-    7px 7px 0 #fff;
+  font-family: "Rock Salt", cursive;
+  font-weight: 700;
   letter-spacing: 0.3em;
-  transform: scaleY(0.7);
-  -webkit-transform: scaleY(0.7);
-  -moz-transform: scaleY(0.7);
-  font-size: 3rem;
-  color: rgb(160, 111, 170);
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px black;
+  margin-top: 15px;
 }
 
 /* ANIMATED BACKGROUND */
@@ -598,8 +597,8 @@ header > h2 {
 .stars1,
 .stars2,
 .stars3 {
-  width: 300px;
-  height: 400px;
+  width: 444px;
+  height: 470px;
   overflow: hidden;
   margin: auto;
   float: left;
@@ -669,14 +668,15 @@ header > h2 {
   width: 100%;
   position: absolute;
   margin: auto;
-  top: 2cap;
+  top: 1.5cap;
   display: block;
 }
 
 .stars1 + .stars1 {
+  margin-left: 20px;
   overflow: hidden;
   overflow-x: hidden;
-  animation: space 40s ease-in-out infinite;
+  animation: space 60s ease-in-out infinite;
   background-image: radial-gradient(
       1px 1px at 75px 125px,
       white,
@@ -694,9 +694,10 @@ header > h2 {
 }
 
 .stars1 + .stars1 + .stars1 {
+  margin-left: 500px;
   overflow: hidden;
   overflow-x: hidden;
-  animation: space 30s ease-in-out infinite;
+  animation: space 40s ease-in-out infinite;
   background-image: radial-gradient(
       1px 1px at 75px 125px,
       white,
@@ -707,4 +708,34 @@ header > h2 {
     radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)),
     radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)),
     radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
+}
+
+/* BORDER */
+
+.titlu {
+  /* font-size: 6.2rem; */
+  animation: pulsate 1.5s infinite alternate;
+  border-top: 0.2rem solid #0892d0;
+  border-bottom: 0.2rem solid #0892d0;
+  /* border-radius: 2rem; */
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #0892d0, 0 0 0.2rem #0892d0, 0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+}
+
+@keyframes pulsate {
+  100% {
+    box-shadow: 0 0 4px #0892d0, 0 0 11px #0892d0, 0 0 19px #0892d0,
+      0 0 40px #bc13fe, 0 0 80px #bc13fe, 0 0 90px #bc13fe, 0 0 100px #bc13fe,
+      0 0 150px #bc13fe;
+  }
+
+  0% {
+    box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #bc13fe,
+      0 0 45px #bc13fe, 0 0 55px #bc13fe, 0 0 70px #bc13fe, 0 0 80px #bc13fe;
+  }
+}
+
+.container {
+  padding-top: 30px;
 }
