@@ -4,37 +4,47 @@
   <a class="fill" href="/feed">Return to Feed</a>
   <br><br><br><br>
 </div>
-<div>
-  <div class="row justify-content-center mt-5">
-    <div class="postContainer">
-      
-      <img class="img-post" src="<%= post.image%>" />
-      <div class="postData">
-        <h2><%= post.title %></h2>
-        <div class="descriptionBox">
-          <p><%= post.caption %></p>
-        </div>
-        <form
-          class="col-1"
-          action="/post/likePost/<%= post.id %>?_method=PUT"
-          method="POST"
-        >
-          <button class="buttonLikes" type="submit" <h3 class="likez">Likes: <%= post.likes %></h3>
-          </button>
-        </form>
+<div class="container">
+  <input type="checkbox" id="switch">
+ <div class="outer">
+   <div class="content">
+     <label for="switch">
+       <span class="toggle">
+         <span class="circle"></span>
+       </span>
+     </label>
+     <div class="image-box">
+       <img src="<%= post.image%>" />
+     </div>
+     <div class="details">
+       <div class="name"><%= post.title %></div>
+       <div class="job">Likes: <%= post.likes %></div>
+       <div class="buttons">
+         <p><%= post.caption %></p>
+         <form
+         class="col-1"
+         action="/post/likePost/<%= post.id %>?_method=PUT"
+         method="POST"
+       >
+         <button class="buttonLikes" type="submit" <h3 class="likez">
+          Like
+         </h3>
+         </button>
+       </form>
 
-        <%if(post.user == user.id){ %>
-        <form
-          action="/post/deletePost/<%= post.id %>?_method=DELETE"
-          method="POST"
-          class="col-3"
-        >
-        <button class="buttonLikes" id="deleto" type="submit" <h3 class="likez">Delete Post</h3>
-        </form>
-        <%}%>
-      </div>
-    </div>
-  </div>
+       <%if(post.user == user.id){ %>
+       <form
+         action="/post/deletePost/<%= post.id %>?_method=DELETE"
+         method="POST"
+         class="col-3"
+       >
+       <button class="buttonLikes" id="deleto" type="submit" <h3 class="likez">Delete Post</h3>
+       </form>
+       <%}%>
+       </div>
+     </div>
+   </div>
+ </div>
 </div>
 
 <%- include('partials/footer') -%>
