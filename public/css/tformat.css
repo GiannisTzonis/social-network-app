@@ -87,7 +87,11 @@
     width: 100%;
     height: 350px;
   }
-  .details {
-    width: 300px;
+  .content .details {
+    width: 100%;
+    margin: 0;
+  }
+  .name {
+    top: 0;
   }
 }
