@@ -1,3 +1,4 @@
+
 <%- include('partials/header') -%>
 <div class="fillBox">
   <a class="fill" href="/logout">Logout</a>
@@ -29,17 +30,18 @@
                   <input type="file" class="form-control" id="imageUpload" name="file">
                 </div>
                 <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
-              </form>
+              </form>z
             </div>
           </div>
       </div>
       <div class="col-6">
-        <ul class="postList">
+        <h2> Previous Posts</h2>
+        <ul class="gridBox">
           <% for(var i=0; i<posts.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
-            <h2> Previous Posts</h2>
+          <li class="posted">
+            
             <a href="/post/<%= posts[i]._id%>">
-              <img class="img-fluido" src="<%= posts[i].image%>">
+              <img class="img-fluid" src="<%= posts[i].image%>">
             </a>
           </li>
         <% } %>
