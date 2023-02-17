@@ -766,7 +766,7 @@ header > h2 {
   display: flex;
   width: 60%;
   padding: 15px;
-  background: #fff;
+  background: #c4faf8;
   border-radius: 12px;
   position: relative;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -788,14 +788,14 @@ header > h2 {
   cursor: pointer;
 }
 #switch:checked ~ .outer .toggle {
-  background: #fff;
+  background: #c4faf8;
 }
 .outer .toggle .circle {
   margin-left: 3px;
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: #fff;
+  background: #c4faf8;
   transition: all 0.3s ease;
 }
 #switch:checked ~ .outer .circle {
@@ -832,6 +832,8 @@ header > h2 {
 #switch:checked ~ .outer .details {
   transition: 0.1s;
   color: #fff;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+    0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
 }
 .content .details .name {
   font-size: 23px;
