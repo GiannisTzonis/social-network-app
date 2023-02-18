@@ -542,7 +542,7 @@ h1 {
   font-size: 6.2rem;
   position: relative;
   text-shadow: 5px 5px #ffffff;
-  filter: drop-shadow(-10px 20px 20px #ffffff);
+  filter: drop-shadow(-12px 20px 12px #ffffff);
   letter-spacing: 0.1em;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3px;
@@ -553,7 +553,7 @@ h1 {
 
   animation: flicker linear 7s reverse infinite;
   animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  /* animation-fill-mode: forwards; */
 
   padding-top: -110px;
 }
@@ -608,7 +608,7 @@ header > h2 {
 
 .stars1 {
   overflow: hidden;
-  animation: space 60s ease-in-out infinite;
+  animation: space 75s ease-in-out infinite;
   background-image: radial-gradient(
       2px 2px at 25px 15px,
       white,
@@ -675,7 +675,6 @@ header > h2 {
 }
 
 .stars1 + .stars1 {
-  margin-left: 20px;
   overflow: hidden;
   overflow-x: hidden;
   animation: space 60s ease-in-out infinite;

@@ -91,7 +91,8 @@
     width: 100%;
     margin: 0;
   }
-  .name {
-    top: 0;
+  .stars1 {
+    width: 160px;
+    height: 180px;
   }
 }
