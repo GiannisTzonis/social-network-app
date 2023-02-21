@@ -750,7 +750,7 @@ header > h2 {
 
 /* POST CARD */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); */
 * {
   margin: 0;
   padding: 0;
@@ -778,7 +778,7 @@ header > h2 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 #switch:checked ~ .outer .content {
-  background: #092c3e;
+  background: #554994;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 #switch:checked ~ .outer .signUp {
@@ -1132,6 +1132,7 @@ h5:before {
       var(--c1);
   /* background-size: var(--s) var(--s); */
   box-shadow: none;
+  border: none;
 }
 
 .commentTextu,
