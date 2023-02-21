@@ -422,6 +422,7 @@ input:-webkit-autofill:focus {
 }
 
 .fillBox {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1135,8 +1136,7 @@ h5:before {
   border: none;
 }
 
-.commentTextu,
-.commentUser {
+.commentTextu {
   text-shadow: none;
   text-shadow: 1px 1px black;
 }
