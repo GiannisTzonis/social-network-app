@@ -66,15 +66,18 @@
     width: 100%;
   }
   .fill {
-    width: 40%;
+    width: 42%;
     margin: auto;
     font-size: 1rem;
+    padding: 9px 35px 9px;
   }
   .postBg {
     margin-bottom: 35px;
     margin-left: 4px;
   }
   .content {
+    position: relative;
+    top: 50px;
     margin: 2px;
     width: 100%;
     display: block;
@@ -95,7 +98,4 @@
     width: 160px;
     height: 180px;
   }
-  /* .stars1 + .stars1 + .stars1 {
-    display: none;
-  } */
 }
