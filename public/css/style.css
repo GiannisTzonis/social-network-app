@@ -759,7 +759,6 @@ header > h2 {
   /* font-family: "Poppins", sans-serif; */
 }
 .outer {
-  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
