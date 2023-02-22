@@ -22,12 +22,13 @@
        <div class="job">Likes: <%= post.likes %></div>
        <div class="buttons">
          <p><%= post.caption %></p>
+         
          <form
          class="col-1"
          action="/post/likePost/<%= post.id %>?_method=PUT"
          method="POST"
        >
-         <button class="buttonLikes" type="submit" <h3 class="likez">
+         <button class="buttonLikes" type="submit" <h3 class="likez" >
           Like
          </h3>
          </button>

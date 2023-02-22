@@ -1,7 +1,7 @@
 
 <%- include('partials/header') -%>
 <div class="fillBox">
-  <a class="fill" href="/feed">Feed</a>
+  <a class="fill" href="/feed">MainPage</a>
   <a class="fill" href="/logout">Logout</a>
 </div>
 <div class="container">
@@ -13,8 +13,10 @@
             <p><strong>Email</strong>: <%= user.email %></p>
           </div>
         </div>
-        <div class="mt-5">
+        <div class="addPostBox">
+          <div class="postTitles">
             <h2>Add a Post</h2>
+          </div>
             <div class="postBg">
               <form class="signUp" action="/post/createPost" enctype="multipart/form-data" method="POST">
                 <div class="mb-3">
@@ -34,19 +36,15 @@
             </div>
           </div>
       </div>
+
+      <% if (locals.messages.errors)  %>
+
       <div class="col-6">
         <div class="postTitles">
-          <h5><span>Previous<br>POSTs</span></h5>
-	
-	        <div class="blobs_1"></div>
-	        <div class="blobs_2"></div>
-	        <div class="blobs_3"></div>
-	        <div class="blobs_4"></div>
-	        <div class="blobs_5"></div>
-	        <div class="blobs_6"></div>
-	        <div class="blobs_7"></div>
+          <h2>
+            Previous Posts
+          </h2>
         </div>
-        
         <ul class="gridBox">
           <% for(var i=0; i<posts.length; i++) {%>
           <li class="posted">
