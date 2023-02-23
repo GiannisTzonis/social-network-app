@@ -778,12 +778,12 @@ header > h2 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 #switch:checked ~ .outer .content {
-  background: #554994;
+  background: #b388eb;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 #switch:checked ~ .outer .signUp {
-  --c2: #554994;
-  --c1: #b388eb;
+  --c2: #8093f1;
+  --c1: #f7aef8;
 }
 
 .outer .toggle {
@@ -791,7 +791,7 @@ header > h2 {
   width: 40px;
   height: 20px;
   border-radius: 20px;
-  background: #554994;
+  background: #b388eb;
   right: 15px;
   top: 13px;
   display: flex;
@@ -811,7 +811,7 @@ header > h2 {
 }
 #switch:checked ~ .outer .circle {
   margin-left: 22px;
-  background: #554994;
+  background: #b388eb;
 }
 #switch:checked ~ .image-box {
   background: #c4faf8;
@@ -821,7 +821,7 @@ header > h2 {
   width: 100%;
   border-radius: 12px;
   padding: 3px;
-  background: #554994;
+  background: #b388eb;
 }
 .image-box img {
   height: 100%;
@@ -841,7 +841,7 @@ header > h2 {
 .content .details {
   width: 100%;
   margin: 10px 0 20px 20px;
-  color: #554994;
+  color: #b388eb;
 }
 #switch:checked ~ .outer .details {
   transition: 0.1s;
@@ -874,15 +874,16 @@ header > h2 {
   border-radius: 6px;
   color: #fff;
   cursor: pointer;
-  background: #554994;
+  background: #b388eb;
   transition: all 0.3s ease;
+  border: 2px solid rgb(248, 248, 183);
 }
 .content button:hover {
   transform: scale(0.97);
 }
 #switch:checked ~ .outer button {
   background: #fff;
-  color: #554994;
+  color: #b388eb;
 }
 .media-icons {
   position: absolute;
@@ -895,7 +896,7 @@ header > h2 {
   display: inline-flex;
   margin: 0 4px;
   font-size: 16px;
-  color: #554994;
+  color: #b388eb;
   opacity: 0.7;
   cursor: pointer;
 }
@@ -945,15 +946,16 @@ footer {
 /* COMMENTS */
 
 .box1 {
+  background: #8093f1;
   list-style-type: none;
   width: 95%;
   margin: 5px auto;
   margin-top: 25px;
-  border: 4px solid #00bfb6;
+  border: 4px solid #16f0e5;
   padding: 10px;
   text-align: center;
   font-weight: 900;
-  color: #00bfb6;
+  color: #0ff5e9;
   font-family: arial;
   position: relative;
 }
@@ -963,9 +965,9 @@ footer {
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 10px solid #00bfb6;
+  border-left: 10px solid #16f0e5;
   border-right: 10px solid transparent;
-  border-top: 10px solid #00bfb6;
+  border-top: 10px solid #16f0e5;
   border-bottom: 10px solid transparent;
   right: -20px;
   top: 6px;
@@ -983,23 +985,23 @@ footer {
   color: whitesmoke;
   text-shadow: 2px 2px black;
   -s: 1px; /* control the size */
-  --c1: #554994;
-  --c2: #b388eb;
+  --c2: #f7aef8;
+  --c1: #8093f1;
 
   --_g: var(--c2) 3% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
     var(--c1) 36% 44%, var(--c2) 66% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
-    var(--c1) 76% 84%, var(--c2) 86% 96%;
+    var(--c1) 76% 84%, var(--c2) 86% 56%;
   background: radial-gradient(
       53% 53% at 100% 0,
       var(--c1) 4%,
       var(--_g),
-      #0008 96%,
+      rgba(255, 255, 255, 0.253) 96%,
       #0000
     ),
     radial-gradient(
         53% 53% at 0 100%,
         #0000,
-        #0008 4%,
+        rgba(0, 0, 0, 0) 4%,
         var(--_g),
         var(--c1) 96%
       )
@@ -1011,7 +1013,7 @@ footer {
 
 .commentTextu {
   text-shadow: none;
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px black;
 }
 
 .postTitles {
@@ -1021,6 +1023,10 @@ footer {
   margin-top: 15px;
   color: #ffefda;
   text-shadow: 2px 2px black;
+}
+
+.signUp > .submitButton {
+  border: 2px solid yellow;
 }
 
 /* #switch:checked ~ .sb6 {
