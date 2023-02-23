@@ -1,7 +1,7 @@
 {
-  "name": "Maya's Recipes",
+  "name": "Pet Galactica",
   "version": "1.0.0",
-  "description": "100Devs Social Network",
+  "description": "The Hottest Pet Social Network",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
