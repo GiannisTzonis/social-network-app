@@ -783,7 +783,7 @@ header > h2 {
 }
 #switch:checked ~ .outer .signUp {
   --c2: #554994;
-  --c1: #f675a8;
+  --c1: #b388eb;
 }
 
 .outer .toggle {
@@ -848,6 +848,9 @@ header > h2 {
   color: #fff;
   text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
     0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+}
+#switch:checked ~ .commentTextu {
+  color: #0fa;
 }
 .content .details .name {
   font-size: 23px;
@@ -979,22 +982,22 @@ footer {
 .outer .signUp {
   color: whitesmoke;
   text-shadow: 2px 2px black;
-  -s: 5px; /* control the size */
+  -s: 1px; /* control the size */
   --c1: #554994;
-  --c2: #f675a8;
+  --c2: #b388eb;
 
-  --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
-    var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
-    var(--c1) 76% 84%, var(--c2) 86% 94%;
+  --_g: var(--c2) 3% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+    var(--c1) 36% 44%, var(--c2) 66% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+    var(--c1) 76% 84%, var(--c2) 86% 96%;
   background: radial-gradient(
-      33% 33% at 100% 0,
+      53% 53% at 100% 0,
       var(--c1) 4%,
       var(--_g),
       #0008 96%,
       #0000
     ),
     radial-gradient(
-        33% 33% at 0 100%,
+        53% 53% at 0 100%,
         #0000,
         #0008 4%,
         var(--_g),

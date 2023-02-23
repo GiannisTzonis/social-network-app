@@ -100,4 +100,7 @@
     width: 160px;
     height: 180px;
   }
+  .details .signUp {
+    width: 100%;
+  }
 }
