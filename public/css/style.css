@@ -374,7 +374,7 @@ input:-webkit-autofill:focus {
 
 .dataBox {
   margin: 4px;
-  width: 400px;
+  width: 84%;
   position: absolute;
   top: 515px;
   right: 45px;
@@ -772,18 +772,18 @@ header > h2 {
   display: flex;
   width: 60%;
   padding: 15px;
-  background: #c4faf8;
+  background: #a8aedd;
   border-radius: 12px;
   position: relative;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 #switch:checked ~ .outer .content {
-  background: #b388eb;
+  background: #400e63;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 #switch:checked ~ .outer .signUp {
-  --c2: #8093f1;
-  --c1: #f7aef8;
+  --c2: #88d4c3;
+  --c1: #8769b6;
 }
 
 .outer .toggle {
@@ -791,7 +791,7 @@ header > h2 {
   width: 40px;
   height: 20px;
   border-radius: 20px;
-  background: #b388eb;
+  background: #400e63;
   right: 15px;
   top: 13px;
   display: flex;
@@ -799,41 +799,42 @@ header > h2 {
   cursor: pointer;
 }
 #switch:checked ~ .outer .toggle {
-  background: #c4faf8;
+  background: #88d4c3;
 }
 .outer .toggle .circle {
   margin-left: 3px;
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: #c4faf8;
+  background: #a8aedd;
   transition: all 0.3s ease;
 }
 #switch:checked ~ .outer .circle {
   margin-left: 22px;
-  background: #b388eb;
+  background: #400e63;
 }
-#switch:checked ~ .image-box {
-  background: #c4faf8;
-}
+
 .image-box {
   height: 550px;
   width: 100%;
   border-radius: 12px;
   padding: 3px;
-  background: #b388eb;
+  background: #8769b6;
+}
+#switch:checked ~ .image-box {
+  background: #88d4c3;
 }
 .image-box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border: 3px solid #fff;
+  border: 3px solid #b6f486;
   border-radius: 12px;
   object-fit: contain;
 }
 #switch:checked ~ .outer .image-box {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  border: 2px solid #fff;
+  border: 2px solid #b6f486;
 }
 #switch:checked ~ .outer .image-box img {
   border-color: transparent;
@@ -841,7 +842,14 @@ header > h2 {
 .content .details {
   width: 100%;
   margin: 10px 0 20px 20px;
-  color: #b388eb;
+  color: #400e63;
+}
+.details > * {
+  margin: 13px;
+}
+.details > .signUp {
+  margin: 0;
+  /* border: 12px solid #88d4c3; */
 }
 #switch:checked ~ .outer .details {
   transition: 0.1s;
@@ -985,8 +993,8 @@ footer {
   color: whitesmoke;
   text-shadow: 2px 2px black;
   -s: 1px; /* control the size */
-  --c2: #f7aef8;
-  --c1: #8093f1;
+  --c2: #400e63;
+  --c1: #8769b6;
 
   --_g: var(--c2) 3% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
     var(--c1) 36% 44%, var(--c2) 66% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
@@ -1031,4 +1039,19 @@ footer {
 
 /* #switch:checked ~ .sb6 {
   text-shadow: 2px 2px whitesmoke;
+} */
+
+/* #tv {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+  color: white;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+#tv:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
 } */
