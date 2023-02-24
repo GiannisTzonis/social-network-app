@@ -373,9 +373,8 @@ input:-webkit-autofill:focus {
 }
 
 .dataBox {
-  margin: 4px;
-  width: 84%;
-  position: absolute;
+  margin: auto;
+  width: 54%;
   top: 515px;
   right: 45px;
   background: #c4f4f8;
