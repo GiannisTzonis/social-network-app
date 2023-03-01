@@ -61,9 +61,9 @@ app.use("/post", postRoutes);
 app.use("/comment", commentRoutes);
 
 //Server Running
-// app.listen(process.env.PORT, () => {
-//   console.log("Server is running, you better catch it!");
-// });
+app.listen(process.env.PORT, () => {
+  console.log("Server is running, you better catch it!");
+});
 
 // app.listen(process.env.PORT || 3000, function () {
 //   console.log(
@@ -73,8 +73,8 @@ app.use("/comment", commentRoutes);
 //   );
 // });
 
-const port = process.env.PORT || 8000;
+// const port = process.env.PORT || 8000;
 
-server.listen(port, () => {
-  console.log("App is running on port " + port);
-});
+// server.listen(port, () => {
+//   console.log("App is running on port " + port);
+// });
