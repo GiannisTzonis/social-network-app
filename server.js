@@ -48,7 +48,7 @@ app.use(
 );
 
 // Passport middleware
-app.use(compression());
+// app.use(compression());
 app.use(passport.initialize());
 app.use(passport.session());
 
