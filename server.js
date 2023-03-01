@@ -65,10 +65,16 @@ app.use("/comment", commentRoutes);
 //   console.log("Server is running, you better catch it!");
 // });
 
-app.listen(process.env.PORT || 3000, function () {
-  console.log(
-    "Express server listening on port %d in %s mode",
-    this.address().port,
-    app.settings.env
-  );
+// app.listen(process.env.PORT || 3000, function () {
+//   console.log(
+//     "Express server listening on port %d in %s mode",
+//     this.address().port,
+//     app.settings.env
+//   );
+// });
+
+const port = process.env.PORT || 8000;
+
+server.listen(port, () => {
+  console.log("App is running on port " + port);
 });
