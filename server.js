@@ -48,6 +48,7 @@ app.use(
 );
 
 // Passport middleware
+app.use(compression());
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -60,6 +61,6 @@ app.use("/post", postRoutes);
 app.use("/comment", commentRoutes);
 
 //Server Running
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server is running, you better catch it!");
 });
