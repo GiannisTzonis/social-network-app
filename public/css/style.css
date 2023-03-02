@@ -1064,3 +1064,7 @@ footer {
 .footeru {
   height: 40px;
 }
+.previousP .posted {
+  width: 550px;
+  height: 550px;
+}

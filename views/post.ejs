@@ -58,6 +58,21 @@
           <button type="submit" class="submitButton">Submit</button>
         </form>
       </div>
+        <ul class="commentGrid">
+          <% for(var i=0; i<comments.length; i++) {%>
+            <li class="box1 sb6">
+              <div class="commentTextu">
+                "<%= comments[i].comment %>"
+                
+              </div>
+              
+              <a class="commentUser"">
+                <%= comments[i].user %>
+              </a>
+              <!-- <%= comments[i].createdAt %> -->
+            </li>
+          <% } %>
+        </ul>
       <ul class="commentGrid">
         <% for(var i=0; i<comments.length; i++) {%>
           <li class="box1 sb6">
