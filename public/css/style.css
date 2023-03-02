@@ -492,7 +492,8 @@ input:-webkit-autofill:focus {
 }
 
 #deleto {
-  background: #a80f3d;
+  background: whitesmoke;
+  color: red;
 }
 
 .buttonLikes:hover {
@@ -993,31 +994,13 @@ footer {
 .outer .signUp {
   color: whitesmoke;
   text-shadow: 2px 2px black;
-  -s: 1px; /* control the size */
-  --c2: #400e63;
-  --c1: #8769b6;
 
-  --_g: var(--c2) 3% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
-    var(--c1) 36% 44%, var(--c2) 66% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
-    var(--c1) 76% 84%, var(--c2) 86% 56%;
-  background: radial-gradient(
-      53% 53% at 100% 0,
-      var(--c1) 4%,
-      var(--_g),
-      rgba(255, 255, 255, 0.253) 96%,
-      #0000
-    ),
-    radial-gradient(
-        53% 53% at 0 100%,
-        #0000,
-        rgba(0, 0, 0, 0) 4%,
-        var(--_g),
-        var(--c1) 96%
-      )
-      var(--c1);
-  /* background-size: var(--s) var(--s); */
+  border-top: 10px inset #16f0e5;
+  border-right: 15px inset #16f0e5;
+  border-bottom: 10px inset #16f0e5;
+  border-left: 15px inset #16f0e5;
+  background-color: #576cd4;
   box-shadow: none;
-  border: none;
 }
 
 .commentTextu {
