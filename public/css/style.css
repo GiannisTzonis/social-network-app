@@ -432,6 +432,8 @@ input:-webkit-autofill:focus {
 
 .gridBox {
   width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
   display: grid;
   column-gap: 50px;
   grid-template-columns: auto auto auto;
@@ -441,9 +443,9 @@ input:-webkit-autofill:focus {
 .posted {
   /* border: 4px solid blue; */
   background-color: #2a293e52;
-  width: 550px;
-  height: 550px;
-  margin: 15px;
+  /* width: 550px;
+  height: 550px; */
+  margin: 12px;
 }
 
 .addPost {
@@ -1039,3 +1041,7 @@ footer {
   border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
   box-shadow: 10px 10px rgba(0,0,0,.25);
 } */
+
+#tv {
+  background-color: rgba(245, 245, 220, 0);
+}
