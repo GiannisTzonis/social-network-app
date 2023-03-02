@@ -1045,3 +1045,14 @@ footer {
 #tv {
   background-color: rgba(245, 245, 220, 0);
 }
+
+.alert {
+  color: red;
+  padding: 5px;
+  background: whitesmoke;
+  font-size: 18px;
+  text-shadow: 2px 2px black;
+  border: 4px solid black;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+}
