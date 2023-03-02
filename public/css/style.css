@@ -569,6 +569,10 @@ h1 {
   /* animation-fill-mode: forwards; */
 
   padding-top: -110px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @keyframes flicker {
@@ -1055,4 +1059,8 @@ footer {
   border: 4px solid black;
   overflow: hidden;
   border-bottom: 2px solid black;
+}
+
+.footeru {
+  height: 40px;
 }
